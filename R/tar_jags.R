@@ -122,6 +122,7 @@ tar_jags <- function(
     "Super-Duper",
     "Mersenne-Twister"
   ),
+  export_obj_names=NULL, 
   jags.seed = 1,
   stdout = NULL,
   stderr = NULL,
@@ -217,6 +218,7 @@ tar_jags <- function(
     n.thin = n.thin,
     jags.module = jags.module,
     RNGname = RNGname,
+    export_obj_names=export_obj_names, 
     jags.seed = jags.seed,
     stdout = stdout,
     stderr = stderr,
@@ -425,6 +427,7 @@ tar_jags_run <- function(
   n.thin,
   jags.module,
   RNGname,
+  export_obj_names, 
   jags.seed,
   stdout,
   stderr,
@@ -466,6 +469,7 @@ tar_jags_run <- function(
       jags.seed = jags.seed,
       RNGname = RNGname,
       jags.module = jags.module,
+      export_obj_names = export_obj_names, 
       envir = envir
     ),
     R2jags::jags(
