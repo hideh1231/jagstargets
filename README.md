@@ -75,7 +75,7 @@ latest features and patches.
 
 ``` r
 install.packages("remotes")
-remotes::install_github("ropensci/jagstargets")
+remotes::install_github("hideh1231/jagstargets")
 ```
 
 ## Usage
